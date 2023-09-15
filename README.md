@@ -32,6 +32,11 @@
 $ npm install
 ```
 
+Copy/Paste prod.env and change the name to .env
+change .env to your credentials
+
+create the database "expenses_tracker" with the schemas [auth,core]
+
 ## Running the app
 
 ```bash
