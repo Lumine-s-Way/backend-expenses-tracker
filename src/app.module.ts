@@ -5,6 +5,7 @@ import { ConfigModule } from '@nestjs/config';
 import { enviroments } from './enviroments';
 import * as Joi from 'joi';
 import { config } from '@config';
+import { AuthModule } from '@auth';
 
 @Module({
   imports: [ConfigModule.forRoot({
@@ -20,7 +21,7 @@ import { config } from '@config';
       DB_PORT: Joi.number().required(),
       DB_USER: Joi.string().required(),
     }),
-  }),],
+  }), AuthModule],
   controllers: [AppController],
   providers: [AppService],
 })

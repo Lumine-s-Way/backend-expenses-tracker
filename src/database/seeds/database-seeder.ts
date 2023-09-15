@@ -5,7 +5,7 @@ import { UsersSeeder } from './users-seeder';
 @Injectable()
 export class DatabaseSeeder {
   constructor(
-    private usersSeeder: UsersSeeder,
+    // private usersSeeder: UsersSeeder,
     // private rolesSeeder: RolesSeeder,
   ) {}
 

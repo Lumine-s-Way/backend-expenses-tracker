@@ -2,6 +2,7 @@ import { Global, Module } from '@nestjs/common';
 import { databaseProviders } from './database.providers';
 import { DatabaseSeeder } from './seeds/database-seeder';
 import { UsersSeeder } from './seeds/users-seeder';
+import { UsersService } from '@auth/services';
 // import { RolesSeeder } from './seeds/roles-seeder';
 
 @Global()
@@ -9,7 +10,8 @@ import { UsersSeeder } from './seeds/users-seeder';
   providers: [
     ...databaseProviders,
     DatabaseSeeder,
-    UsersSeeder,
+    // UsersSeeder,
+  
     // RolesSeeder,
   ],
   exports: [...databaseProviders, DatabaseSeeder],

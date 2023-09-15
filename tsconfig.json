@@ -14,8 +14,38 @@
       "@config": [
         "./src/config"
       ],
-      "@config/module": [
-        "./src/config"
+      "@auth": [
+        "./src/modules/auth"
+      ],
+      "@auth/controllers": [
+        "./src/modules/auth/controllers"
+      ],
+      "@auth/dtos": [
+        "./src/modules/auth/dtos"
+      ],
+      "@auth/entities": [
+        "./src/modules/auth/entities"
+      ],
+      "@auth/services": [
+        "./src/modules/auth/services"
+      ],
+      "@core/services": [
+        "./src/modules/core/services"
+      ],
+      "@core/dtos": [
+        "./src/modules/core/dtos"
+      ],
+      "@database": [
+        "./src/database"
+      ],
+      "@shared/enums": [
+        "./src/shared/enums"
+      ],
+      "@shared/models": [
+        "./src/shared/models"
+      ],
+      "@shared/validation": [
+        "./src/shared/validation"
       ],
     },
     "incremental": true,

@@ -21,7 +21,7 @@ export const databaseProviders = [
         // entities: [User, StudentEntity, CatalogueEntity],
         // migrations: ['src/database/migrations/*.ts'],
         // migrationsTableName: 'migrations',
-        // dropSchema: true,
+        dropSchema: true,
         synchronize: true,
       });
 
