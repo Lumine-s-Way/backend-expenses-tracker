@@ -3,6 +3,7 @@ import { databaseProviders } from './database.providers';
 import { DatabaseSeeder } from './seeds/database-seeder';
 import { UsersSeeder } from './seeds/users-seeder';
 import { UsersService } from '@auth/services';
+import { AuthModule } from '@auth';
 // import { RolesSeeder } from './seeds/roles-seeder';
 
 @Global()
@@ -10,7 +11,7 @@ import { UsersService } from '@auth/services';
   providers: [
     ...databaseProviders,
     DatabaseSeeder,
-    // UsersSeeder,
+    UsersSeeder,
   
     // RolesSeeder,
   ],
