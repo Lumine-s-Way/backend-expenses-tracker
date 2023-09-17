@@ -26,6 +26,9 @@
       "@auth/entities": [
         "./src/modules/auth/entities"
       ],
+      "@auth/models": [
+        "./src/modules/auth/models"
+      ],
       "@auth/services": [
         "./src/modules/auth/services"
       ],
