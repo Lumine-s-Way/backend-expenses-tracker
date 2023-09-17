@@ -8,6 +8,7 @@ import { UsersService } from '../users/users.service';
 import { UsersEntity } from '@auth/entities';
 import { LoginDto, PasswordChangeDto } from '@auth/dtos';
 import { PayloadTokenModel } from '@auth/models';
+import * as Bcrypt from 'bcrypt';
 
 @Injectable()
 export class AuthService {
