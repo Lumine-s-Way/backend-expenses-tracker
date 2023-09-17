@@ -8,6 +8,7 @@ import {
   PrimaryGeneratedColumn,
   UpdateDateColumn,
 } from 'typeorm';
+import * as Bcrypt from 'bcrypt';
 
 @Entity('users', { schema: 'auth' })
 export class UsersEntity {
@@ -64,6 +65,12 @@ export class UsersEntity {
   textFormat(): void {
     this.username.trim();
     this.password.trim();
+  }
+
+  @BeforeInsert()
+  @BeforeUpdate()
+  async encrypt(): Promise<void> {
+    this.password = await Bcrypt.hash(this.password, 10);
   }
 
 }
